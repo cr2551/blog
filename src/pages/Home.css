@@ -1,0 +1,99 @@
+.home {
+    margin-top: 5rem;
+    /* min-width: 850px; */
+    flex: 1; /* the same as doing flex-grow: 1; */
+}
+
+.home .article-link {
+    text-decoration: none;
+    color: var(--black-olive)
+}
+
+.home section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fcfcfc;
+    box-shadow: 0px 5px 15px rgb(182, 181, 181);
+    padding: 1rem 0px;
+    border-radius: 10px;
+}
+.home div.image-container {
+    
+    /* width: fit-content; */
+    max-width: 30%;
+    /* border: 3px solid rgb(58, 104, 255); */
+    box-shadow: 0 0 5px var(--orange-peel);
+    border-radius: 5px;
+    
+}
+.home img {
+    max-width: 100%;
+    height: auto;
+    /* transform: scale(.9); */
+    /* border-radius: 5px;     */
+    /* display: block; */
+    vertical-align: middle;
+}
+.home .article-info {
+    width: fit-content;
+    max-width: 50%;
+}
+
+.article-info h3 {
+    width: fit-content(10vh);
+}
+
+.article-info .description {
+    width: 80%;
+ 
+}
+
+.home p {
+    color: var(--black-olive);
+    /* text-align: left;
+     */
+    /* text-justify: auto; */
+    text-align: justify;
+    width: 100%;
+    /* text-align: start; */
+}
+
+@media only screen and (max-width: 500px) {
+    .home section {
+        /* flex-direction: column; */
+        /* justify-content: space-between; */
+        gap:1rem;
+        max-height: 20vh;
+        /* overflow: scroll; */
+        /* margin: auto 6%; */
+        width: 95%;
+        font-size: .8rem;
+    }
+    .home .article-info {
+        /* overflow-y: hidden; */
+    }
+
+    .home .article-info .description {
+        height: 9vh;
+        overflow-y: hidden;
+        display:inline-block;
+        
+    }
+
+    .home .article-info .description p {
+        display: inline;
+        margin: 0;
+    }
+
+    .home .article-info::after {
+        font-size: 1.4rem;
+        color: var(--orange-peel);
+        content: "...";
+        display: inline;
+        position: relative;
+        left: -15%;
+    }
+}

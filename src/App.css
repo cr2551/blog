@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+
+:root {
+    --black-olive: #1F271B;
+    --orange-peel: #FFA62B;
+    --lavender-web: #8E8DBE;
+}
+
+body {
+    background-color: #F8F7FF;
+    
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}

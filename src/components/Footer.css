@@ -1,0 +1,28 @@
+.footer {
+    background-color: var(--black-olive);
+    color: var(--lavender-web);
+    text-align: center;
+    width: 100%;
+}
+
+.footer .icon {
+    font-size: 2rem;
+    margin: 1rem 1rem;
+}
+
+.footer .icon:hover {
+    color: white;
+}
+
+.footer .google {
+    font-size: 2rem;
+}
+.footer .twitter {
+    font-size: 2rem;
+}
+.footer .linkedin {
+    font-size: 2rem;
+}
+.footer .lnIn {
+    font-size: 2rem;
+}
